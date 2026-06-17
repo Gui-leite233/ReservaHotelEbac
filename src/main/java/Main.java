@@ -76,7 +76,7 @@ public class Main {
             return;
        } 
 
-        //in.nextLine();
+        
         System.out.println("Nome do hóspede: ");
         String nome = in.nextLine();
 
@@ -90,15 +90,15 @@ public class Main {
             System.out.println("Número de dias: ");
             dias = in.nextInt();
             if (dias<1) {
-                System.out.println("O número de dias tem que ser maior que 1.");
+                System.out.println("O número de dias tem que ser maior ou igual que 1.");
             }
 
         }
 
-        int diaria =0;
+        double diaria =0;
         while (diaria<=0) {
             System.out.println("Valor da diária: ");
-            diaria = in.nextInt();
+            diaria = in.nextDouble();
             if (diaria<=0) {
                 System.out.println("O valor da diária tem que ser maior que 1");
             }
